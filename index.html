@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.css" />
+    <link rel="stylesheet" href="style/animate.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <title>Home | lifestyle-blog</title>
+  </head>
+  <body>
+    <!-- hamburger menu -->
+    <div class="container first">
+      <div class="header-menu">
+        <div class="logo-img">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="search-box" onclick="showAndHide()">
+          <i class="icon-search"></i>
+        </div>
+        <div class="socials">
+          <div>
+            <i class="icon-twitter"></i>
+          </div>
+          <div>
+            <i class="icon-dribbble"></i>
+          </div>
+        </div>
+        <div>
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+        </div>
+      </div>
+    </div>
+    <!-- nav -->
+
+    <nav class="navigation">
+      <!-- menu -->
+      <ul class="menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="#">
+            <i
+              class="icon-search"
+              id="search-click"
+              onclick="showAndHide()"
+            ></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <!-- search -->
+        <div class="search" id="searchbox">
+          <input type="search" />
+          <i class="icon-search"></i>
+        </div>
+        <!-- logo -->
+        <div class="logo">
+          <div class="logo-img">
+            <img src="images/logo.png" alt="logo" title="logo" />
+          </div>
+          <div class="socials">
+            <div>
+              <i class="icon-twitter"></i>
+            </div>
+            <div>
+              <i class="icon-dribbble"></i>
+            </div>
+          </div>
+        </div>
+        <!-- hero -->
+        <div class="hero wow fadeIn">
+          <!-- slider -->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleCaptions"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="mb-5">A NICE ENTRY</h5>
+                  <button class="btn btn-outline-light">READ MORE</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="mb-5">ENTRY WITH AUDIO</h5>
+                  <button class="btn btn-outline-light">READ MORE</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="mb-5">LOREM IPSUM</h5>
+                  <button class="btn btn-outline-light">READ MORE</button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- elevator -->
+    <i class="elevator icon-cheveron-up"></i>
+    <div class="opened-menu"></div>
+    <!-- main -->
+    <main id="main">
+      <div class="container">
+        <!-- info -->
+        <div class="info">
+          <!-- news -->
+          <div class="news">
+            <!-- news title -->
+            <div class="news-title">
+              <a href="">NEWS</a>
+              <h2>A NICE ENTRY</h2>
+            </div>
+            <!-- news section -->
+            <section class="news-section">
+              <div class="news-img wow fadeIn">
+                <img
+                  src="images/coffee-845x321.jpg"
+                  alt="Some coffe"
+                  title="Some coffe"
+                />
+              </div>
+              <!-- news description -->
+              <div class="news-description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium quis, sem.
+                </p>
+              </div>
+              <!-- news read more -->
+              <div class="news-read-more">
+                <p>
+                  Nulla consequat massa quis enim. Donec pede justo, fringilla
+                  vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                  ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+                  eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend
+                  tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                  eleifend ac, enim.
+                </p>
+              </div>
+              <!-- read more btn -->
+              <div class="read-more-btn wow fadeInDown">
+                <button class="btn2 btn-primary2">
+                  <a href="readmore.html">Read more</a>
+                </button>
+              </div>
+              <!--news date -->
+              <div class="news-date">
+                <span>AUGUST 24, 2014</span>
+                <span><a href="">1 COMMENT</a></span>
+                <span>BY <a href="">KRIESI</a></span>
+              </div>
+              <!-- more news -->
+              <div class="more-news">
+                <!-- news-personal -->
+                <div class="news-personal">
+                  <!-- news personal img 1 -->
+                  <div class="news-personal-img wow fadeIn">
+                    <img
+                      src="images/skateborder_miles-495x400.jpg"
+                      alt="skate"
+                    />
+                  </div>
+                  <div class="news-personal-links">
+                    <a href="">NEWS</a>,
+                    <a href="">PERSONAL</a>
+                  </div>
+                  <div class="news-personal-title">
+                    <h2><a href="">ENTRY WITH AUDIO</a></h2>
+                  </div>
+                  <div class="news-personal-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu,…
+                    </p>
+                  </div>
+                  <div class="news-date">
+                    <span><a href="">0 Comments</a></span>
+                    <span>May 11, 2014</span>
+                  </div>
+                  <!-- news personal img 2 -->
+                  <div class="news-personal-img wow fadeIn">
+                    <img src="images/girl-495x400.jpg" alt="girl" />
+                  </div>
+                  <div class="news-personal-links">
+                    <a href="">PERSONAL</a>
+                  </div>
+                  <div class="news-personal-title">
+                    <h2><a href="">ENTRY WITH POST FORMAT “VIDEO”</a></h2>
+                  </div>
+                  <div class="news-personal-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus…
+                    </p>
+                  </div>
+                  <div class="news-date">
+                    <span><a href="">0 Comments</a></span>
+                    <span>December 24, 2013</span>
+                  </div>
+                  <!-- news personal img 3 -->
+                  <div class="news-personal-img wow fadeIn">
+                    <img src="images/bridge-495x400.jpg" alt="bridge" />
+                  </div>
+                  <div class="news-personal-links">
+                    <a href="">NEWS</a>
+                  </div>
+                  <div class="news-personal-title">
+                    <h2><a href="">THIS IS A POST WITH POST TYPE “LINK”</a></h2>
+                  </div>
+                  <div class="news-personal-description">
+                    <p>
+                      http://kriesi.at Entries with this post type link to a
+                      different page with their headline. Lorem ipsum dolor sit
+                      amet, consectetuer adipiscing elit. Aenean commodo ligula
+                      eget dolor.
+                    </p>
+                  </div>
+                  <div class="news-date">
+                    <span><a href="">0 Comments</a></span>
+                    <span>August 24, 2012</span>
+                  </div>
+                </div>
+                <!-- news public -->
+                <div class="news-public">
+                  <!-- news personal img 1 -->
+                  <div class="news-public-img wow fadeIn">
+                    <img
+                      src="images/public-domain-office2-495x400.jpg"
+                      alt="public-domain"
+                    />
+                  </div>
+                  <div class="news-public-links">
+                    <a href="">NEWS</a>
+                  </div>
+                  <div class="news-public-title">
+                    <h2><a href="">LOREM IPSUM</a></h2>
+                  </div>
+                  <div class="news-public-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu,…
+                    </p>
+                  </div>
+                  <div class="news-date">
+                    <span><a href="">0 Comments</a></span>
+                    <span>February 12, 2014</span>
+                  </div>
+                  <!-- news personal img 2 -->
+                  <div class="news-public-img wow fadeIn">
+                    <img
+                      src="images/skateborder_miles-495x400.jpg"
+                      alt="skate"
+                    />
+                  </div>
+                  <div class="news-public-links">
+                    <a href="">NEWS</a>,
+                    <a href="">PERSONAL</a>
+                  </div>
+                  <div class="news-public-title">
+                    <h2><a href="">A SMALL GALLERY</a></h2>
+                  </div>
+                  <div class="news-public-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu,…
+                    </p>
+                  </div>
+                  <div class="news-date">
+                    <span><a href="">0 Comments</a></span>
+                    <span>January 24, 2013</span>
+                  </div>
+                  <!-- news personal img 3 -->
+                  <div class="news-public-img wow fadeIn">
+                    <img src="images/bear-495x400.jpg" alt="bear" />
+                  </div>
+                  <div class="news-public-links">
+                    <a href="">NEWS</a>
+                  </div>
+                  <div class="news-public-title">
+                    <h2><a href="">A NICE POST</a></h2>
+                  </div>
+                  <div class="news-public-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu,…
+                    </p>
+                  </div>
+                  <div class="news-date">
+                    <span><a href="">0 Comments</a></span>
+                    <span>May 24, 2012</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- profile -->
+          <div class="profile">
+            <!-- profile title -->
+            <div class="profile-title">
+              <h2>THATS ME: ALICIA ENFOLD</h2>
+            </div>
+            <!-- profile section -->
+            <section class="profile-section">
+              <!-- profile img -->
+              <div class="profile-img wow fadeIn">
+                <img src="images/aliceenfold.jpeg" alt="profile img" />
+              </div>
+              <!-- profile name -->
+              <div class="profile-name">
+                <p><strong>Cum sociis natoque penatibus</strong></p>
+              </div>
+              <!-- profile bio -->
+              <div class="profile-bio">
+                <p>Magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <!-- profile sign -->
+              <div class="profile-sign">
+                <img src="images/alicia.jpg" alt="signature" />
+              </div>
+              <!-- profile confirm -->
+              <div class="profile-confirm">
+                <div class="newsletter">
+                  <h2>NEWSLETTER</h2>
+                </div>
+                <div class="form">
+                  <form action="">
+                    <div class="email">
+                      <input type="email" placeholder="Email Address*" />
+                    </div>
+                    <!-- subscribe -->
+                    <div class="subscribe">
+                      <button class="btn2 btn-secondary2">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <!-- instagram -->
+            <div class="instagram">
+              <h2>INSTAGRAM</h2>
+            </div>
+            <!-- follow me -->
+            <div class="follow-me">
+              <a href="" class="btn2 btn-light2">Follow Me!</a>
+            </div>
+            <!-- facebbok -->
+            <div class="facebook">
+              <h2>FACEBOOK</h2>
+            </div>
+            <!-- categories -->
+            <div class="categories">
+              <h2>CATEGORIES</h2>
+            </div>
+            <!-- categories links -->
+            <div class="categories-links">
+              <ul class="categories-menu">
+                <li><a href=""> News</a> (7)</li>
+                <li><a href="">Personal </a>(3)</li>
+              </ul>
+            </div>
+            <!-- latest news -->
+            <div class="latest-news">
+              <h2>LATEST NEWS</h2>
+            </div>
+            <!-- latest news section -->
+            <section class="latest-news-section">
+              <div class="first-news">
+                <div class="latest-image">
+                  <img src="images/coffee-36x36.jpg" alt="" />
+                </div>
+                <div class="latest-title">
+                  <a href="">A nice entry</a>
+                  <span>August 24,2014-6:56 pm</span>
+                </div>
+              </div>
+              <div class="second-news">
+                <div class="latest-image">
+                  <img src="images/skateborder_miles-36x36.jpg" alt="" />
+                </div>
+                <div class="latest-title">
+                  <a href="">Entry with Audio</a>
+                  <span>May 11,2014-6:55 pm</span>
+                </div>
+              </div>
+              <div class="third-news">
+                <div class="latest-image">
+                  <img src="images/public-domain-office2-36x36.jpg" alt="" />
+                </div>
+                <div class="latest-title">
+                  <a href="">Lorem ipsum</a>
+                  <span>February 12,2014-6:49 pm</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- pages -->
+        <div class="pages">
+          <!-- page number -->
+          <div class="page-numbers">
+            <div class="num-one">1</div>
+            <div class="num-two"><a href="page2.html">2</a></div>
+          </div>
+          <!-- page counter -->
+          <div class="page-counter">
+            <span>Page 1 of 2</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <!-- footer links -->
+        <div class="footer-links">
+          <div class="interesting-links">
+            <h3>INTERESTING LINKS</h3>
+            <span
+              >Here are some interesting links for you! Enjoy your stay :)</span
+            >
+          </div>
+          <div class="footer-categories">
+            <h3>CATEGORIES</h3>
+            <a href="">News</a><a href="">Personal</a>
+          </div>
+          <div class="footer-archives">
+            <h3>ARCHIVES</h3>
+            <a href="">August 2014</a>
+            <a href="">May 2014</a>
+            <a href="">February 2014</a>
+            <a href="">December 2013</a>
+            <a href="">January 2013</a>
+            <a href="">August 2012</a>
+            <a href="">May 2012</a>
+            <a href="">October 2011</a>
+          </div>
+          <div class="footer-sitemap">
+            <h3>SITEMAP</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!-- footer copyright -->
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="copyright">
+            <span>- Enfold Website Theme by Kriesi</span>
+            <div class="socials">
+              <div>
+                <i class="icon-twitter"></i>
+              </div>
+              <div>
+                <i class="icon-dribbble"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
