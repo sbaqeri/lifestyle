@@ -565,18 +565,27 @@ img {
   border-right-color: transparent;
   margin-bottom: 1rem;
 }
+.info .news .search-result {
+  display: flex;
+}
 .info .profile .profile-title h2,
 .info .profile .profile-section .profile-confirm .newsletter h2,
 .info .profile .instagram h2,
 .info .profile .facebook h2,
 .info .profile .categories h2,
 .info .profile .latest-news h2,
-.info .news .search-result h4 {
+.info .news .search-result h4,
+.info .news .search-result h5 {
   font-size: 16px;
   color: var(--primary-color);
   font-family: "lato light";
   padding: 0.5rem 0;
   text-align: left;
+}
+.info .news .search-result h5 {
+  text-align: left;
+  color: var(--orange-color);
+  padding-left: 0.5rem;
 }
 .info .profile .profile-section .profile-name {
   font-size: 15px;
