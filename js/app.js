@@ -71,7 +71,6 @@ if (email) {
     ("@gmail.com");
    if (document.myForm.Email.value !== "" && check ){
     email.style.borderColor = "green";
-    console.log("hi");
          }
 })
 }
@@ -80,10 +79,14 @@ const formContact = document.querySelector(".info .news .news-section .contact")
 if (submitForm) {
   submitForm.addEventListener("click", function () {
          if( document.myForm.Name.value !== "" && document.myForm.Email.value !== "" ) {
-           sentMessage.style.display = "block";
-           formContact.style.display = "none";
+          submitForm.value="submitting...";
+        const setInput=setInterval(function(){
+          sentMessage.style.display = "block";
+          formContact.style.display = "none";
+          },4000);
          }
-         return( true );
+        
+        //  return( true );
 })
 }
 document.getElementById("search-click").addEventListener("click",function(e){
@@ -113,6 +116,10 @@ document.querySelector(".search-box").addEventListener("click",function(e){
 })
 // jquery
 $(function () {
+    // preloader
+    $(window).on("load", function () {
+      $(".loader").fadeOut();
+    });
   // elevator
   $(".elevator").click(function () {
     $("body , html").animate({ scrollTop: 0 }, 1000);
