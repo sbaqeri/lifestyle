@@ -41,7 +41,8 @@ if (usersCounter) {
         // Form validation
 const name2 = document.getElementById("inputName");
 const email = document.getElementById("inputEmail");
-const submitForm = document.querySelector(".contact-form .contact-control .submit input")
+const submitForm = document.querySelector(".contact-form .contact-control .submit input");
+
 if (submitForm) {
   submitForm.addEventListener("click", function (e) {
           e.preventDefault();
@@ -49,12 +50,12 @@ if (submitForm) {
             alert( "Please fill your name!" );
            name2.style.borderColor = "red";
          }
-         if( document.myForm.Email.value == "" ) {
+         let check=document.myForm.Email.value.includes("@gmail.com");
+         if( document.myForm.Email.value == "" && !check ) {
             alert( "Please fill your Email!" );
             email.style.borderColor = "red";
   } 
-         return( true );
-     
+         return( true ); 
 })
 }
 if (name2) {
@@ -66,8 +67,11 @@ if (name2) {
 }
 if (email) {
   email.addEventListener("keyup", function () {
-   if (document.myForm.Email.value !== ""){
+    let check=document.myForm.Email.value.includes
+    ("@gmail.com");
+   if (document.myForm.Email.value !== "" && check ){
     email.style.borderColor = "green";
+    console.log("hi");
          }
 })
 }
@@ -82,14 +86,31 @@ if (submitForm) {
          return( true );
 })
 }
-function showAndHide() {
-  let x = document.getElementById("searchbox");
-  if (x.style.visibility == 'hidden') {
-    x.style.visibility = "visible";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
+document.getElementById("search-click").addEventListener("click",function(e){
+  e.preventDefault();
+  let searchVisibility=document.querySelector(".search").style.visibility;
+  let searchOpacity=document.querySelector(".search").style.opacity;
+ if(searchVisibility="hidden" && searchOpacity==0){
+  document.querySelector(".search").style.visibility="visible";
+  document.querySelector(".search").style.opacity="1";
+ }else if(searchVisibility="visible" && searchOpacity==1){
+  document.querySelector(".search").style.visibility="hidden";
+  document.querySelector(".search").style.opacity="0";
+ }
+
+})
+document.querySelector(".search-box").addEventListener("click",function(e){
+  e.preventDefault();
+  let searchVisibility=document.querySelector(".search").style.visibility;
+  let searchOpacity=document.querySelector(".search").style.opacity;
+ if(searchVisibility="hidden" && searchOpacity==0){
+  document.querySelector(".search").style.visibility="visible";
+  document.querySelector(".search").style.opacity="1";
+ }else if(searchVisibility="visible" && searchOpacity==1){
+  document.querySelector(".search").style.visibility="hidden";
+  document.querySelector(".search").style.opacity="0";
+ }
+})
 // jquery
 $(function () {
   // elevator
@@ -112,7 +133,12 @@ $(function () {
 $(".search input").keyup(function(e){
   localStorage.setItem("inputVal",$(".search input").val());
   if(e.which == 13){
-    window.open("search.html");}
+    window.open("search.html");
+    $(".search input").val("");
+    $(".search-box input").val("");}
+})
+$(".click").click(function(){
+  window.open("search.html");
 })
     var url = "search.html";
   if ("url:contains('search.html')") {
@@ -143,6 +169,13 @@ $(".search input").keyup(function(e){
     $( ".cross" ).hide();
     $( ".hamburger" ).hide();
   }
+  window.addEventListener("click",function(e){
+    if(!document.getElementById("search-click").contains(e.target)&&
+    !document.getElementById("searchbox").contains(e.target)&&
+    !document.querySelector(".search-box").contains(e.target)){
+      $(".search").css("visibility","hidden");
+    }
+  })
   // for closing menu and body changes to default color
   $('.opened-menu').on('click', function() {
     $(".opened-menu").css("display","none");
