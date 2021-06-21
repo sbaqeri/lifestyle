@@ -13,6 +13,10 @@
   --third-color: #919191;
   --orange-color: #de6739;
 }
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
 /* animaton */
 @keyframes up {
   0% {
@@ -225,14 +229,15 @@ img {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  transform: translate(30%, 40%);
+  transform: translate(450px, 25%);
   padding: 0.5rem;
   border: 1px solid var(--border-color);
-  animation-name: up;
-  animation-duration: 1.5s;
-  animation-iteration-count: 2;
+  position: fixed;
   visibility: hidden;
+  opacity: 0;
   margin-bottom: none;
+  transition: 0.5s;
+  z-index: 20;
 }
 .search-input {
   width: 100%;
@@ -1466,6 +1471,7 @@ img {
   font-size: 15px;
   background-color: var(--primary-color);
   transition: 0.5s;
+  text-align: center;
 }
 .info
   .news
@@ -1782,6 +1788,10 @@ img {
     align-items: center;
     justify-content: center;
   }
+  #main .info .news-section .more-news .news-personal,
+  #main .info .news-section .more-news .news-public {
+    width: 100%;
+  }
 }
 @media (max-width: 460px) {
   /* burger-menu */
@@ -1795,6 +1805,21 @@ img {
   }
   .header-menu .socials {
     display: none;
+  }
+  .info
+    .news
+    .news-section
+    .contact
+    .contact-form
+    form
+    .contact-control
+    .submit
+    input {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    transition: 0.5s;
   }
 }
 @media (max-width: 1200px) {
