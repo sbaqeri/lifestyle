@@ -117,9 +117,7 @@ document.querySelector(".search-box").addEventListener("click",function(e){
 // jquery
 $(function () {
     // preloader
-    $(window).on("load", function () {
       $(".loader").fadeOut();
-    });
   // elevator
   $(".elevator").click(function () {
     $("body , html").animate({ scrollTop: 0 }, 1000);
